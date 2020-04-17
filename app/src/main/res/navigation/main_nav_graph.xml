@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/imageFeedFragment">
+
+    <fragment
+        android:id="@+id/favoriteFeedFragment"
+        android:name="com.byron.unsplashgallery.favoriteFeed.FavoriteFeedFragment"
+        android:label="fragment_favorite_feed"
+        tools:layout="@layout/fragment_favorite_feed" >
+        <action
+            android:id="@+id/favoriteFeedFragment_to_detailImageFragment"
+            app:destination="@id/detailImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFeedFragment"
+        android:name="com.byron.unsplashgallery.imageFeed.ImageFeedFragment"
+        android:label="fragment_image_feed"
+        tools:layout="@layout/fragment_image_feed" >
+        <action
+            android:id="@+id/imageFeedFragment_to_detailImageFragment"
+            app:destination="@id/detailImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailImageFragment"
+        android:name="com.byron.unsplashgallery.detailImage.DetailImageFragment"
+        android:label="fragment_detail_image"
+        tools:layout="@layout/fragment_detail_image">
+
+
+        <argument
+            android:name="image"
+            app:argType="com.byron.data.model.RemoteImage" />
+    </fragment>
+
+</navigation>

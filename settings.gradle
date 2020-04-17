@@ -1,0 +1,3 @@
+rootProject.name='UnsplashGallery'
+include ':app'
+include ':data'

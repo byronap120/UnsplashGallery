@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="imageTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textTitle</item>
+    </style>
+
+    <style name="imageSubtitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textSubTitle</item>
+    </style>
+
+
+    <style name="detailTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textTitle</item>
+    </style>
+
+    <style name="detailSubtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textSubTitle</item>
+    </style>
+
+    <style name="detailDescription">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/cardBackground</item>
+    </style>
+
+</resources>
